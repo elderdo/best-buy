@@ -35,4 +35,13 @@ export class PartsListComponent {
     this.selectedId = id;
     this.quantity = 1; // Reset quantity when a new part is selected
   }
+
+  proceedToPurchase() {
+    const selectedPart = this.parts.find((p) => p.id === this.selectedId);
+
+    console.log('Forwarding to purchase:', {
+      part: selectedPart,
+      quantity: this.quantity,
+    });
+  }
 }

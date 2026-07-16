@@ -19,4 +19,6 @@
 <div *ngIf="selectedId !== null" class="quantity-box">
   <label>Quantity:</label>
   <input type="number" min="1" [(ngModel)]="quantity" />
+
+  <button (click)="proceedToPurchase()">Proceed to Purchase</button>
 </div>
