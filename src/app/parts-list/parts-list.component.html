@@ -7,4 +7,10 @@
   <option value="price">Sort by Price</option>
 </select>
 
-<div *ngFor="let p of filteredParts">{{ p.name }} - ${{ p.price }}</div>
+<div
+  *ngFor="let p of filteredParts"
+  (click)="selectPart(p.id)"
+  [class.selected]="p.id === selectedId"
+>
+  {{ p.name }} - ${{ p.price }}
+</div>

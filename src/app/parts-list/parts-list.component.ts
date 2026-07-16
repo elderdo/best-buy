@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./parts-list.component.css'],
 })
 export class PartsListComponent {
-  sortBy = 'name'; // default
-
   filterText = '';
+  sortBy = 'name'; // default
+  selectedId: number | null = null;
 
   parts = [
     { id: 1, name: 'SSD 1TB', price: 89.99 },
@@ -28,5 +28,9 @@ export class PartsListComponent {
     }
 
     return list;
+  }
+
+  selectPart(id: number) {
+    this.selectedId = id;
   }
 }

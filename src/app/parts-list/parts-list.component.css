@@ -11,3 +11,8 @@ div {
   border-radius: 4px;
   background: #f9f9f9;
 }
+
+.selected {
+  background: #d0e8ff;
+  border-color: #4a90e2;
+}
