@@ -9,6 +9,7 @@ export class PartsListComponent {
   filterText = '';
   sortBy = 'name'; // default
   selectedId: number | null = null;
+  quantity = 1;
 
   parts = [
     { id: 1, name: 'SSD 1TB', price: 89.99 },
@@ -32,5 +33,6 @@ export class PartsListComponent {
 
   selectPart(id: number) {
     this.selectedId = id;
+    this.quantity = 1; // Reset quantity when a new part is selected
   }
 }

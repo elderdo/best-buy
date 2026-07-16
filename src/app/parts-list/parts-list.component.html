@@ -14,3 +14,9 @@
 >
   {{ p.name }} - ${{ p.price }}
 </div>
+
+<!-- Quantity input appears only when a part is selected -->
+<div *ngIf="selectedId !== null" class="quantity-box">
+  <label>Quantity:</label>
+  <input type="number" min="1" [(ngModel)]="quantity" />
+</div>

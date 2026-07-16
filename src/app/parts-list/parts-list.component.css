@@ -16,3 +16,12 @@ div {
   background: #d0e8ff;
   border-color: #4a90e2;
 }
+
+.quantity-box {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f0f8ff;
+  border-radius: 4px;
+  width: 200px;
+}
